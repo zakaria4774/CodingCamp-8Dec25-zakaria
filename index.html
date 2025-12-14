@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Todo List</h2>
+
+    <form id="todoForm">
+        <input type="text" id="todoInput" placeholder="Add Todo">
+        <input type="date" id="dateInput">
+        <button type="submit">Add</button>
+    </form>
+
+    <div class="filter">
+        <button onclick="filterTodo('all')">All</button>
+        <button onclick="filterTodo('today')">Today</button>
+    </div>
+
+    <ul id="todoList"></ul>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
